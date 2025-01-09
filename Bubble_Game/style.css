@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
 
@@ -17,7 +17,7 @@ html, body{
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: rgb(91, 153, 132);
+    background-color: rgb(50, 232, 171);
 }
 
 #panel {
@@ -54,11 +54,13 @@ html, body{
 
 #pbtm{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 10px;
     width: 100%;
     height: calc(100% - 70px);
-    background-color: navajowhite;
+    background-color: rgb(245, 245, 244);
     padding: 20px;
 }
 
