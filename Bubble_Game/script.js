@@ -1,6 +1,6 @@
 var timer = 60;
-
 var score = 0;
+var hitrn = 0;
 
 function increaseScore(){
     score += 10;
@@ -9,8 +9,8 @@ function increaseScore(){
 
 
 function getNewHit() {
-  var run = Math.floor(Math.random() * 10);
-  document.querySelector("#hitVal").textContent = run;
+  hitrn = Math.floor(Math.random() * 10);
+  document.querySelector("#hitVal").textContent = hitrn;
 }
 
 function makeBubble() {
@@ -31,9 +31,24 @@ function runTimer() {
       document.querySelector("#timerVal").textContent = timer;
     } else {
       clearInterval(timerint);
+      document.querySelector("#pbtm").innerHTML = `<h1>Game over! Your Score is ${score}</>`;
     }
   }, 1000);
 }
+
+
+document.querySelector('#pbtm').
+addEventListener('click', function(e){
+  console.log(e.target.textContent);
+  var clickedNumber = Number(e.target.textContent);
+  if(hitrn === clickedNumber){
+    console.log("yes")
+    increaseScore();
+    makeBubble();
+    getNewHit();
+    
+  }
+})
 
 runTimer();
 makeBubble();
