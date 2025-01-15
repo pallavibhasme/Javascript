@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(37, 33, 33);
+}
+
+.contener {
+  /* width: 20vw; */
+  height: 20vw;
+  display: flex;
+  justify-content: space-around;
+  gap: 2vw;
+  align-items: center;
+  color: white;
+}
+
+button {
+    padding: 1.5vw;
+  border-radius: 10px;
+}
+
+img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.display {
+  display: flex;
+  flex-direction: row-reverse;
+}
